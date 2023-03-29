@@ -1,3 +1,5 @@
+package br.com.alura.excecoes;
+
 public class FluxoComError {
 
 	public static void main(String[] args) {

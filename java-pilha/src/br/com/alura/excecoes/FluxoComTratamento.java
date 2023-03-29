@@ -1,3 +1,5 @@
+package br.com.alura.excecoes;
+
 public class FluxoComTratamento {
 
 	public static void main(String[] args) {
