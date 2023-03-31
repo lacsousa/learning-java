@@ -1,10 +1,10 @@
 package br.com.alura.excecoes;
 
-public class Conexao implements AutoCloseable{
+public class Conexao  implements AutoCloseable{
 	
 	public Conexao() {
 		System.out.println("Abrindo conexao");
-		throw new IllegalStateException();
+		//throw new IllegalStateException();
 	}
 
 	public void leDados() {

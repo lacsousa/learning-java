@@ -22,12 +22,21 @@ public abstract class Conta extends Object {
      * @param numero
      */
     public Conta(int agencia, int numero){
+
+        if(agencia < 1) {
+            throw new IllegalArgumentException("Agência inválida");
+        }
+
+        if(numero < 1) {
+            throw new IllegalArgumentException("Número da Conta inválido");
+        }
+
         Conta.total++;
         //System.out.println("O total de contas é " + Conta.total);
         this.agencia = agencia;
         this.numero = numero;
         //this.saldo = 100;
-        //System.out.println("Estou criando uma conta " + this.numero);
+        System.out.println("Estou criando uma conta " + this.numero);
     }
 
     public abstract void deposita(double valor);
