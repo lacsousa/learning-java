@@ -35,7 +35,7 @@ public abstract class Conta extends Object {
         //System.out.println("O total de contas é " + Conta.total);
         this.agencia = agencia;
         this.numero = numero;
-        //this.saldo = 100;
+        this.saldo = 100;
         System.out.println("Estou criando uma conta " + this.numero);
     }
 
