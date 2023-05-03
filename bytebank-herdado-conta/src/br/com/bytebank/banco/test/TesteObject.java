@@ -1,7 +1,5 @@
 package br.com.bytebank.banco.test;
 
-import br.com.bytebank.banco.modelo.Cliente;
-import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
@@ -13,13 +11,9 @@ public class TesteObject {
 //		System.out.println(3);
 //		System.out.println(false);
 		
-		Conta conta1 = new ContaCorrente(1234, 777);
-		
-		System.out.println(conta1.getSaldo());
-
 		Object cc = new ContaCorrente(22, 33);
 		Object cp = new ContaPoupanca(33, 22);
-		Object cliente = new Cliente();
+		//Object cliente = new Cliente();
 		
 		System.out.println(cc);
 		System.out.println(cp);

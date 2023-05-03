@@ -12,16 +12,16 @@ public class TestePackUtil {
 
         ArrayList<Conta> lista = new ArrayList<Conta>();
 
-        Conta cc1 = new ContaCorrente(111, 345);
+        Conta cc1 = new ContaCorrente(111, 333);
         lista.add(cc1);
 
         Conta cc2 = new ContaCorrente(42, 777);
         lista.add(cc2);
 
-        Conta cc3 = new ContaCorrente(321, 555);
+        Conta cc3 = new ContaCorrente(321, 111);
         lista.add(cc3);
 
-        Conta cc4 = new ContaCorrente(678, 888);
+        Conta cc4 = new ContaCorrente(678, 222);
         lista.add(cc4);
 
         for( int i=0; i< lista.size(); i++ ) {
@@ -34,5 +34,10 @@ public class TestePackUtil {
         for (Conta c: lista) {
             System.out.println(c);
         }
+
+        // Autoboxing / Unboxing
+        Integer ref = Integer.valueOf("3");
+        ref++;
+        System.out.println("Referência:" + ref);
     }
 }

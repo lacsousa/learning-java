@@ -9,13 +9,11 @@ public class TesteContas {
 
 	//java.lang.String
 	public static void main(String[] args) throws SaldoInsuficienteException{
-		
-		//ContaCorrente cc2 = new ContaCorrente(1, -222);
-
-		ContaCorrente cc = new ContaCorrente(1, 111);
+						
+		ContaCorrente cc = new ContaCorrente(111, 111);
 		cc.deposita(100.0);
 		
-		ContaPoupanca cp = new ContaPoupanca(2, 222);
+		ContaPoupanca cp = new ContaPoupanca(222, 222);
 		cp.deposita(200.0);
 		
 		cc.transfere(10.0, cp);
